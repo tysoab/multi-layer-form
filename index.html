@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>multi-form challenge</title>
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="controller.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="flex-box">
+        <div class="num-container active-box">1</div>
+        <div class="content">
+          <h2>STEP 1</h2>
+          <h2>YOUR INFO</h2>
+        </div>
+      </div>
+      <div class="flex-box">
+        <div class="num-container">2</div>
+        <div class="content">
+          <h2>STEP 2</h2>
+          <h2>SELECT PLAN</h2>
+        </div>
+      </div>
+      <div class="flex-box">
+        <div class="num-container">3</div>
+        <div class="content">
+          <h2>STEP 3</h2>
+          <h2>ADD-ONS</h2>
+        </div>
+      </div>
+      <div class="flex-box">
+        <div class="num-container">4</div>
+        <div class="content">
+          <h2>STEP 4</h2>
+          <h2>SUMMARY</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="contents-wrapper">
+      <div class="personal-info slide">
+        <h2>Personal info</h2>
+        <p>Please provide your name, email address, and phone number</p>
+        <form action="" method="post" class="form-personal-info">
+          <div class="form-group">
+            <div class="form-detail">
+              <label for="name">Name</label>
+              <div class="error-name error-field"></div>
+            </div>
+            <input type="text" class="name-field" placeholder="e.g. stephen king">
+          </div>
+
+          <div class="form-group">
+            <div class="form-detail">
+              <label for="email">Email Address</label>
+              <div class="error-email error-field"></div>
+            </div>
+            <input type="email" class="email-field" placeholder="e.g. stephenking@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <div class="form-detail">
+              <label for="phoneNo">Phone Number</label>
+              <div class="error-phoneNo error-field"></div>
+            </div>
+            <input type="number" class="phoneNo-field" placeholder="e.g. +2349032765986">
+          </div>
+        </form>
+      </div>
+
+      <div class="plan-info slide hidden">
+        <h2>Select your plan</h2>
+        <p>You have the option of monthly or yearly billing</p>
+      
+      <div class="plan-box-container">
+        <div class="plan-box">
+          <img src="images/icon-arcade.svg" alt="">
+          <div class="plan-details">
+            <h3>Arcade</h3>
+            <p>$<span class="pd-price">9</span>/<span class="pd-my">mo</span></p>
+            <small class="year-discount"></small>
+          </div>
+        </div>
+        <div class="plan-box">
+          <img src="images/icon-advanced.svg" alt="">
+          <div class="plan-details">
+            <h3>Advanced</h3>
+            <p>$<span class="pd-price">12</span>/<span class="pd-my">mo</span></p>
+            <small class="year-discount"></small>
+          </div>
+        </div>
+        <div class="plan-box">
+          <img src="images/icon-pro.svg" alt="">
+          <div class="plan-details">
+            <h3>Pro</h3>
+            <p>$<span class="pd-price">15</span>/<span class="pd-my">mo</span></p>
+            <small class="year-discount"></small>
+          </div>
+        </div>
+      </div>
+      
+      <div class="month-year-option">
+        <p>Monthly</p>
+        <div class="month-year-btn"></div>
+        <p>Yearly</p>
+      </div>
+      </div>
+
+      <div class="add-ons-container slide hidden">
+        <h2>Pick add-ons</h2>
+        <p>Add-ons help enhance your gaming experience.</p>
+
+        <div class="add-ons-box">
+          <input type="checkbox" name="check" class="check-field">
+          <div>
+            <h3>Online service</h3>
+            <p>Access to multiplayer games</p>
+          </div>
+          <p class="add-ons-box-mo-tag">$<span class="adson-price">1</span>/<span class="adson-my">mo</span></p>
+          
+        </div>
+
+        <div class="add-ons-box">
+          <input type="checkbox" name="check" class="check-field">
+          <div>
+            <h3>Larger storage</h3>
+            <p>Extra 1TB of cloud save</p>
+          </div>
+          <p class="add-ons-box-mo-tag">$<span class="adson-price">2</span>/<span class="adson-my">mo</span></p>
+        </div>
+
+        <div class="add-ons-box">
+          <input type="checkbox" name="check" class="check-field">
+          <div>
+            <h3>Customizable profile</h3>
+            <p>Custom theme on your profile</p>
+          </div>
+          <p class="add-ons-box-mo-tag">$<span class="adson-price">3</span>/<span class="adson-my">mo</span></p>
+        </div>
+      </div>
+
+      <div class="final-step-container slide hidden"></div>
+
+      </div>
+
+      <div class="prenxt-btn-container"></div>
+
+    </div>
+  </div>
+  <footer>designed by Taiwo Yusuf Sunday #tysoab@gmail.com</footer>
+</body>
+</html>
