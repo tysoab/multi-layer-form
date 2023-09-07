@@ -62,7 +62,6 @@ class App{
       if(this._currSlide === 2 && this._users.addOns.length > 0){
         this._summaryContainer.innerHTML = '';
         this._summaryContainer.insertAdjacentHTML('afterbegin', this.handlerFinalView(this._users));
-        this._setTimeout();
       }
       
       this._currSlide++;
@@ -90,6 +89,7 @@ class App{
     if(e.target.classList.contains('confirm-btn')){
       this._summaryContainer.innerHTML = `<img class="success-img" src="images/spinner.jpg" alt="successful">`;
       this._prevNextButton.classList.add('hidden');
+      this._setTimeout();
     }
   }
   _clearButton(){
